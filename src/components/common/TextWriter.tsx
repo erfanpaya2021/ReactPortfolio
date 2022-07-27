@@ -1,4 +1,5 @@
-import React, { useState, useEffect, FunctionComponent } from "react";
+import { useState, useEffect, FunctionComponent } from "react";
+import tw from "twin.macro";
 
 const DEFAULT_MS = 30;
 
@@ -54,9 +55,9 @@ const Typewriter: FunctionComponent<Props> = ({
     });
 
     return (
-        <span className="text-red-600 text-inherit">
+        <span tw="text-red-600">
             {text[currentStringIndex].substring(0, currentTextIndex)}
-            <span className=" animate-cursor">{cursor && "▎"}</span>
+            <span tw=" animate-cursor">{cursor && "▎"}</span>
         </span>
     );
 };
