@@ -47,7 +47,7 @@ const Navbar = () => {
             <Modal active={openMenu}>
                 <div
                     css={[
-                        tw`fixed z-30 top-0 right-0  w-56 h-screen bg-teal-900 text-white transition-transform duration-700`,
+                        tw`fixed z-30 top-0 right-0  w-56 h-screen bg-gray-700 text-white transition-transform duration-700`,
                         openMenu ? tw`translate-x-0` : tw`translate-x-[100%]`,
                     ]}
                 >
