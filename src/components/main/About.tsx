@@ -9,10 +9,12 @@ const About = () => {
         <section id="about" tw="py-24 bg-gray-700 ">
             <Container tw="grid items-center grid-cols-1 md:grid-cols-2">
                 <div tw="col-span-1 order-2 md:order-1">
-                    <SectionTitle firstText="About" secondText="Me." />
-                    <p tw="text-sm mt-4 text-gray-50 w-[80%] sm:text-base text-justify">
+                    <SectionTitle>
+                        <span tw="text-red-600">About</span>&nbsp;Me.
+                    </SectionTitle>
+                    <p tw="text-sm mt-4 text-gray-50 sm:w-[80%] sm:text-base text-justify">
                         Hi, I'm Erfan Paya, a front end developer with 2 years
-                        of exprince. I work with{" "}
+                        of exprince. I work with
                         <span tw="font-semibold">
                             React, Typescript, Redux and Tailwindcss
                         </span>

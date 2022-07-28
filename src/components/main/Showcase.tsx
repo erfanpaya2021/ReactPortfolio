@@ -30,7 +30,7 @@ const Showcase = () => {
                 </div>
             </div>
 
-            <div tw="absolute top-[70%] left-0">
+            <div tw="absolute bottom-[10%] left-0">
                 <TWSocialIcon tw=" bg-red-600 ">
                     <a target="_blank" href="mailto:erfanpaya2021@gmail.com">
                         Email
@@ -57,10 +57,18 @@ const Showcase = () => {
     );
 };
 
-const TWButton = tw.button`py-2 px-6 rounded-3xl sm:text-xl font-semibold border-[3px] border-red-600 transition-colors duration-500 hover:bg-red-600 hover:text-black`;
+const TWButton = tw.button`
+    py-2 px-6 rounded-3xl font-semibold border-[3px] border-red-600 transition-colors duration-500 
+    sm:text-xl
+    hover:bg-red-600 hover:text-black
+`;
 
 const TWSocialIcon = styled.div`
-    ${tw`w-36 sm:w-44 font-semibold text-sm sm:text-base bg-red-600 transition-transform duration-700 translate-x-[-60%] hover:translate-x-0`}
+    ${tw`
+        w-36 font-semibold text-sm  bg-red-600 transition-transform duration-700 translate-x-[-60%]
+        sm:w-44 sm:text-base
+        hover:translate-x-0
+     `}
 
     & > a {
         ${tw`w-full flex items-center justify-between p-4 sm:p-5`}
