@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import { Modal } from "../common";
-import { navItems } from "../../data";
+import { NAV_ITEMS } from "../../data";
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <nav>
             <ul tw="hidden md:flex items-center gap-6">
-                {navItems.map(item => (
+                {NAV_ITEMS.map(item => (
                     <li
                         tw="flex items-center gap-1 transition-colors duration-500 hover:text-red-600"
                         key={item.title}
@@ -56,7 +56,7 @@ const Navbar = () => {
                         tw="absolute top-4 left-4 text-3xl transition-colors duration-500 cursor-pointer hover:text-red-600"
                     />
                     <ul tw="flex flex-col items-center justify-between h-full gap-6">
-                        {navItems.map(item => (
+                        {NAV_ITEMS.map(item => (
                             <li
                                 onClick={() => setOpenMenu(false)}
                                 tw="flex justify-center items-center h-full gap-1 transition-colors duration-500 hover:text-red-600"

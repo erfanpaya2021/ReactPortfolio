@@ -1,7 +1,6 @@
 import tw, { styled } from "twin.macro";
-import { FaCode } from "react-icons/fa";
 
-import { skills } from "../../data";
+import { SKILLS_DATA } from "../../data";
 import { Container, SectionTitle } from "../common";
 
 const Skills = () => {
@@ -12,14 +11,14 @@ const Skills = () => {
                     My&nbsp;<span tw="text-red-600">Skills.</span>
                 </SectionTitle>
                 <div tw="flex flex-wrap justify-center gap-10 mt-8 sm:mt-12">
-                    {skills.map(skilCate => (
+                    {SKILLS_DATA.map(skilCate => (
                         <TWSkillCategory key={skilCate.title}>
                             <skilCate.icon tw="text-6xl sm:text-7xl text-red-600 mx-auto" />
                             <h3>{skilCate.title}</h3>
                             {skilCate.skills.map(skill => (
                                 <TWSkill key={skill.title}>
-                                    <span tw="">{skill.title}</span>
-                                    <img tw="w-6" src={skill.image} alt="t" />
+                                    <span>{skill.title}</span>
+                                    <img src={skill.image} alt={skill.title} />
                                 </TWSkill>
                             ))}
                         </TWSkillCategory>
@@ -32,10 +31,10 @@ const Skills = () => {
 
 const TWSkillCategory = styled.div`
     ${tw`
-        w-48 min-h-[22rem] py-8
+        w-[70%] min-h-[22rem] py-8
         bg-gray-700 border-b-8 border-gray-700 transition-all duration-500 
-        sm:w-64
-        lg:w-80 lg:py-12
+        sm:w-[45%]
+        lg:w-[30%] lg:py-12
         hover:border-red-600
     `}
 
