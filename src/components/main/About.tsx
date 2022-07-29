@@ -18,12 +18,9 @@ const About = () => {
                         <span tw="font-semibold">
                             React, Typescript, Redux and Tailwindcss
                         </span>
-                        . Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Molestiae expedita, adipisci pariatur, consequatur
-                        sequi dolorum praesentium ea, sit eaque natus tenetur?
-                        Repellat, maxime expedita tempore, et a sint labore
-                        dolores vitae incidunt cupiditate delectus ex soluta
-                        facilis eligendi sit explicabo?
+                        . I'm currently learning{" "}
+                        <span tw="font-semibold">Next js</span>. And I decide to
+                        work as a freelancer.
                     </p>
                 </div>
                 <div tw="col-span-1 flex justify-center items-center mb-16 md:mb-0 order-1 md:order-2">
