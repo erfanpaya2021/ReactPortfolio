@@ -9,7 +9,7 @@ pnpm run dev
 
 ## Demo
 
-#### Here is a working live demo : https://reactstore-hp0098.netlify.app/
+#### Here is a working live demo : https://erfan-paya-portfolio.netlify.app/
 
 ## Technologies
 
